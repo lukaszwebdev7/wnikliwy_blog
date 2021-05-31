@@ -8,6 +8,19 @@ import { getAllPosts } from '../lib/api'
 export default function Blog({ allPosts }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+
+  const size = 6;
+
+  function chunksMaker() {
+		const result = [];
+		for (let i = 0; i < morePosts.length; i += size) {
+			result.push(morePosts.slice(i, i + size));
+		}
+		return result;
+	}
+
+  const arrays = chunksMaker();
+
   return (
     <>
       <Head>
@@ -30,7 +43,7 @@ export default function Blog({ allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories arrays={arrays} />}
         </Container>
       </Layout>
     </>
