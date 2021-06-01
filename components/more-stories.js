@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ScrollIntoView from 'react-scroll-into-view';
 import PostPreview from '../components/post-preview';
 
 export default function MoreStories({ arrays }) {
@@ -16,6 +17,7 @@ export default function MoreStories({ arrays }) {
 			<h2
 				style={{ fontFamily: 'Lobster Two', letterSpacing: '3px' }}
 				className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-coffee underline"
+				id="more"
 			>
 				Więcej ...
 			</h2>
@@ -33,15 +35,18 @@ export default function MoreStories({ arrays }) {
 					))}
 				</ul>
 				<div className="flex justify-center mb-20">
-					<div>
+					<div className="flex flex-row">
 						{arrays.map((array, index) => (
-							<span
-								className="inline-block w-8 cursor-pointer hover:text-blue-text text-center"
-								key={index}
-								onClick={(e) => loadPostsHandler(e, array)}
-							>
-								{index + 1}
-							</span>
+							<ScrollIntoView selector="#more">
+								<button
+									className="inline-block w-8 cursor-pointer hover:text-blue-text text-center"
+									id={index + 1}
+									key={index}
+									onClick={(e) => loadPostsHandler(e, array)}
+								>
+									{index + 1}
+								</button>
+							</ScrollIntoView>
 						))}
 					</div>
 				</div>
