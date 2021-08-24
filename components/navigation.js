@@ -83,11 +83,12 @@ const Navigation = () => {
 					</div>
 
 					<div>
-						<Link href="//radcapiaseczno.pl/">
-							<a className="block py-1 pl-2 rounded lg:inline-block lg:mt-0 uppercase font-bold transition duration-300 mr-4 text-base sm:text-lg md:text-xl lg:text-2xl hover:text-blue-text">
-								Kancelaria
-							</a>
-						</Link>
+						<a
+							href="https://radcapiaseczno.pl/"
+							className="block py-1 pl-2 rounded lg:inline-block lg:mt-0 uppercase font-bold transition duration-300 mr-4 text-base sm:text-lg md:text-xl lg:text-2xl hover:text-blue-text"
+						>
+							Kancelaria
+						</a>
 					</div>
 				</div>
 			</div>
