@@ -10,9 +10,9 @@ const Footer = () => {
           <div style={{ fontFamily: "Roboto Condensed" }} className="flex sm:flex-row justify-between text-center leading-16 mx-auto">
             <div className="mx-8">Radca Prawny Łukasz Szczepaniak</div>
             <div className="mx-8 hidden xl:block">Kancelaria Radcy Prawnego</div>
-            <div className="mx-8">05 - 500 Piaseczno, ul. Sienkiewicza 8</div>
+            <div className="mx-8"></div>
             <div className="mx-8 tracking-wide">tel. 505 305 893</div>
-            <div className="mx-8 tracking-wide">e-mail: LS@radcapiaseczno.pl</div>
+            <div className="mx-8 tracking-wide"></div>
             <div className="mx-8">© Wszelkie prawa zastrzeżone</div>
           </div>
         </div>
@@ -22,12 +22,12 @@ const Footer = () => {
           <div style={{ fontFamily: "Roboto Condensed" }} className="flex flex-row sm:text-left">
             <div className="flex flex-col w-1/2 text-center">
               <div className="">Radca Prawny Łukasz Szczepaniak</div>
-              <div className="">05-500 Piaseczno, ul.Sienkiewicza 8</div>
+              <div className=""></div>
               <div className="">© Wszelkie prawa zastrzeżone</div>
             </div>
             <div className="flex flex-col w-1/2 text-center">
               <div className=" tracking-wide">tel. 505 305 893</div>
-              <div className=" tracking-wide">e-mail: LS@radcapiaseczno.pl</div>
+              <div className=" tracking-wide"></div>
             </div>
           </div>
         </div>
